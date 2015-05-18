@@ -1,0 +1,20 @@
+subprojects {
+    group = 'pl.sepulkarz'
+    version = '1.0'
+
+    apply plugin: 'java'
+    apply plugin: 'distribution'
+
+    archivesBaseName = super.getName() + '-' + getName()
+
+    distributions {
+        main {
+            baseName = archivesBaseName
+        }
+    }
+
+    repositories {
+        mavenLocal()
+    }
+}
+

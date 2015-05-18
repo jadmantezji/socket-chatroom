@@ -1,0 +1,12 @@
+apply plugin: 'application'
+mainClassName = 'pl.sepulkarz.socketchatroom.client.Client'
+
+run {
+    if (System.getProperty("exec.args") != null) {
+        args System.getProperty("exec.args").split()
+    }
+}
+
+dependencies {
+    compile project(':common')
+}

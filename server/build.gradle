@@ -1,0 +1,6 @@
+apply plugin: 'application'
+mainClassName = 'pl.sepulkarz.socketchatroom.server.Server'
+
+dependencies {
+    compile project(':common')
+}
