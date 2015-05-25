@@ -6,6 +6,7 @@ import java.util.Date;
 
 /**
  * Listener interface for messages in general and private chat rooms.
+ * TODO: Split this interface to client presence/attendance listener, private and chatroom message listeners.
  */
 public interface IMessageListener {
 
